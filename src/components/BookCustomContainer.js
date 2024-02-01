@@ -1,11 +1,11 @@
 import { eventInfo } from "../utils/demoData";
-import Card from "./Card";
+import BookCustomCard from "./BookCustomCard";
 
-const CardContainer = () => {
+const BookCustomContainer = () => {
 	return (
 		<section className="cardContainer">
 			{eventInfo.map((element, index) => (
-				<Card
+				<BookCustomCard
 					key={index + "eventInfo"}
 					propsEventData={element}
 				/>
@@ -14,4 +14,4 @@ const CardContainer = () => {
 	);
 };
 
-export default CardContainer;
+export default BookCustomContainer;

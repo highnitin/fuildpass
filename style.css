@@ -3,6 +3,92 @@ body{
     /* font-family: "Honk", system-ui; */
     font-family: "Karla", sans-serif;
     color: white;
+    
+}
+
+.homePage{
+    color: white;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(rgb(199, 210, 254), rgb(254, 202, 202), rgb(254, 249, 195));
+     background-size: 300% 300%;
+    animation: colorChange 10s infinite linear;
+    height: 98vh;
+    padding: 0;
+}
+
+.companyName{
+  color: black;
+  font-size: 13vw;
+  font-weight: 900;
+  letter-spacing: -5px;
+  margin: 20px;
+}
+
+.homeButton{
+  font-weight: 500;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+
+
+.custom-btn {
+  width: 230px;
+  height: 45px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+  text-decoration: none;
+}
+
+.btn-16 {
+  border: none;
+  color: #000;
+}
+.btn-16:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow:
+   -7px -7px 20px 0px #fff9,
+   -4px -4px 5px 0px #fff9,
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.btn-16:hover {
+  color: #000;
+}
+.btn-16:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.btn-16:active {
+  top: 2px;
 }
 
 .containerSection{
@@ -11,7 +97,11 @@ body{
     gap: 10px;
     /* position: relative; */
     justify-content: center;
+    
 }
+
+
+
 
 .headerSection {
     background-color: bisque;
@@ -54,20 +144,60 @@ li {
     flex-direction: column;
     padding: 15px;
     border-radius: 8px;
-    background-color: white;
+    
     color: rgba(0, 0, 0, 0.76);
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     overflow: hidden;
     margin-bottom: 70px;
+    background: radial-gradient(rgb(199, 210, 254), rgb(254, 202, 202), rgb(254, 249, 195));
+  background-size: 300% 300%;
+  animation: colorChange 10s infinite linear;
+
  }
+
+ @keyframes colorChange {
+    0% {
+      background-position: 50% 50%;
+    }
+    10% {
+      background-position: 20% 50%;
+    }
+    20% {
+      background-position: 40% 50%;
+    }
+    30% {
+      background-position: 60% 50%;
+    }
+    40% {
+      background-position: 80% 50%;
+    }
+    50% {
+      background-position: 0% 50%;
+    }
+    60% {
+      background-position: 20% 50%;
+    }
+    70% {
+      background-position: 40% 50%;
+    }
+    80% {
+      background-position: 60% 50%;
+    }
+    90% {
+      background-position: 80% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+  }
 
  .cardContainer{
     border: none;
     padding: 15px;
     border-radius: 8px;
-    background-color: white;
+    
     color: rgba(0, 0, 0, 0.76);
     display: flex;
     justify-content: center;
@@ -156,4 +286,47 @@ li {
     border-radius: 8px;
     cursor: pointer;
     width: 100%;
+}
+
+.singleCompanyCard{
+  margin: 50px;
+  width: 500px;
+}
+
+.singleCompanyCardContainer{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  padding: 15px
+}
+
+.form input {
+  height: 35px;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding: 5px;
+
+}
+
+.form :last-child{
+  width: 100%;
+  background-color: salmon;
+}
+
+.youtubeVideoContainer{
+  border: 2px solid white;
+  border-radius: 8px;
+}
+
+.formWithDataBase{
+  margin-bottom: 50px;
+}
+
+.formHeadline{
+  text-align: center;
 }

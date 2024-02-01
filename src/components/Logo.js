@@ -1,4 +1,3 @@
-import { LOGO_URL } from "../utils/constants";
 import fluidpasslogo from "../img/fluidpasslogo.png";
 const Logo = () => {
 	return (

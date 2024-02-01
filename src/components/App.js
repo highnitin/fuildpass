@@ -1,18 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import Header from "./Header";
-import EventPage from "./EventPage";
-import Footer from "./Footer";
+import Home from "../pages/home";
 
 const App = () => {
 	return (
-		<section className="containerSection">
-			<Header />
-			<EventPage />
-			<Footer />
+		<section>
+			<Home />
 		</section>
 	);
 };
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<App />);
+export default App;
